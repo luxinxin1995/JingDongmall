@@ -1,0 +1,196 @@
+nav{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+nav .nav{
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+nav .logo{
+    position: absolute;
+    top: 10px;
+}
+nav .logo .logo_text{
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    background: url(http://misc.360buyimg.com/user/passport/1.0.0/css/i/l-icon.png)
+}
+nav .search{
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    margin: 0 5px;
+    background: url(http://misc.360buyimg.com/user/passport/1.0.0/css/i/q-icon.png)
+}
+.law{
+    width: 100%;
+    background-color: #FFF8F0;
+}
+.law .text{
+    width: 990px;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    color: #FFA258;
+}
+.law .text i{
+    background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/icon-tips.png);
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.content{
+    width: 100%;
+    height: 475px;
+    background-color: #fceee3
+}
+.content .inner-content{
+    width: 990px;
+    height: 100%;
+    margin: 0 auto;
+    background: url(http://img13.360buyimg.com/da/jfs/t8740/167/1904942123/50397/7a880d7f/59c07df1N6f70d686.jpg) 0px 0px no-repeat;
+    background-color: #fceee3;
+    position: relative;
+}
+.content .inner-content .login{
+    width: 346px;
+    background-color: white;
+    float: right;
+    position: relative;
+    top: 40px;
+}
+.content .account:hover{
+    color:#E4393C;
+    font-weight:700;
+}
+.content .QR_code{
+    width: 346px;
+    height: 168px;
+    padding: 20px 18px 20px 20px;
+    text-align: center;
+    position: relative;
+}
+.content .QR_code .telephone_code{
+    position: absolute;
+    right: 0;
+    width: 141px;
+    height: 168px;
+    display: none;
+    background: url(http://misc.360buyimg.com/user/passport/1.0.0/css/i/phone-orange.png);
+}
+.qr-coagent{
+    color: #999;
+    line-height: 25px;
+    margin-left: 40px;
+}
+.qr-coagent li{
+    text-align:right;
+    position:relative;
+    margin-right:18px;
+    width:68px;
+}
+.qr-coagent li b{
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    left:0;
+    margin: 0 auto;
+    background:url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/qr-coagent.png);
+}
+.content .footer{
+    width: 346px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    border-top: 1px solid #f4f4f4;
+    background-color: #fcfcfc;
+    position: absolute;
+    bottom: -50px;
+}
+.content .footer .QQ-icon,.content .footer .weixin-icon{
+    width: 19px;
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 16px;
+    background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/QQ-weixin.png)
+}
+.content .footer li{
+    position: absolute;
+}
+footer{
+    width: 100%;
+    height: 86px;
+}
+#footer-2013{
+    text-align: center;
+    margin: 0 auto;
+    width: 990px;
+    height: 86px;
+    line-height: 86px;
+    font-size: 12px;
+    color: #aaa;
+}
+.form{
+    width: 346px;
+    position: absolute;
+    background-color: white;
+}
+.form form{
+    margin-top: 20px;
+}
+.form .item{
+    margin-bottom: 20px;
+    text-align: right;
+}
+.form .item-fore1,.form .item-fore2{
+    width: 304px;
+    height: 40px;
+    border: 1px solid #bdbdbd;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+ .form .item-fore3 button{
+    width: 304px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #E4393C;
+    margin-left: 25px;
+    font-size: 18px;
+} 
+.form .item-fore1 label,.form .item-fore2 label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(http://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png)
+}
+
+.form .item-fore2 label{
+    background-position: -48px 0;
+}
+.form .item-fore1 input,.form .item-fore2 input{
+    height: 38px;
+    line-height: 38px;
+    padding: 10px 0 10px 50px;
+    width: 254px;
+    font-size: 14px;
+}

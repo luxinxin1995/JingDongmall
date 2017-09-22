@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="" href="/css/login.css">
+    <link rel="stylesheet" type="" href="/css/base.css">
+    <script src="/script/jquery.cookie.js"></script>
+    <title>登录</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="http://misc.360buyimg.com/lib/img/e/logo-201305-b.png" alt="" width="170px" height="60px;">
+                </a>
+                <b class="logo_text"></b>
+            </div>
+            <div class="page">
+                <a href="" style="position:relative;color:#999;float:right;top:52px;">
+                    <b class="search"></b>
+                    登录页面，调查问卷
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="law">
+        <div class="text">
+            <i></i>
+            <p style="display:inline-block">依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版
+                <a href="">《京东隐私政策》</a> 已上线，将更有利于保护您的个人隐私。
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="inner-content">
+            <div class="login">
+                <div class="top" style="border-bottom:1px solid #f4f4f4;">
+                    <div class="code" style="width:173px;height:55px;position:relative;">
+                        <div class="scan" style="width:173px;height:18px;position:absolute;left:0;top:18px;border-right:1px solid #ccc;font-size:18px;text-align:center;">
+                            <a href="" class="switch1" style="color:#E4393C;font-weight:700;">扫码登录</a>
+                        </div>
+                    </div>
+                    <div class="account" style="width:173px;height:55px;position:absolute;right:0;top:0;">
+                        <a href="" class="switch2" style="width:99%;height:18px;position:absolute;right:0;top:18px;font-size:18px;text-align:center;">账户登录</a>
+                    </div>
+                </div>
+                <div class="first scan_code">
+                    <div class="QR_code">
+                        <div class="code_img" style="width:165px;border:1px solid #f4f4f4;padding:8px;position:absolute;left:95px;">
+                            <img src="http://qr.m.jd.com/show?appid=133&size=147&t=1505957835833" alt="">
+                        </div>
+                        <div class="telephone_code">
+
+                        </div>
+                    </div>
+                    <div style="text-align:center;margin:40px auto 14px;">
+                        <p>打开<a href="" style="color:#E4393C">手机京东</a> 扫描二维码</p>
+                    </div>
+                    <div class="coagent qr-coagent" id="qrCoagent" style="margin-bottom:20px;">
+                        <ul style="text-align:center;display:flex;width:266px;height:25px;margin-left:20px;">
+                            <li><b></b><em>免输入</em></li>
+                            <li><b class="faster" style="background-position:-27px;"></b><em>更快&nbsp;&nbsp;</em></li>
+                            <li><b class="more-safe" style="background-position:-54px;"></b><em>更安全</em></li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <ul style="display:flex;">
+                            <li style="width:68px;left:10px;">
+                                <b class="QQ-icon"></b>
+                                <a href="" style="margin-left:20px;"><span>QQ</span></a>
+                                <span class="line" style="color:#ccc;padding:0 10px;position:absolute;">|</span>
+                            </li>
+                            <li style="width:48px;left:80px;">
+                                <a href="" class="pdl"><b class="weixin-icon" style="background-position:-20px 0;"></b><span style="margin-left:20px;">微信</span></a>
+                            </li>
+                            <li class="" style="right:10px;">
+                                <a href="/register.html" style="display:inline-block;width:20px;height:20px;background:#E4393C;color:white;border-radius:50%;line-height:20px;text-align:center;">></a>
+                                <a href="/register.html" target="_blank" style="color:#E4393C"><span>立即注册</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form" style="display:none;">
+                    <form id="formlogin" method="post" action="/user/login">
+                        <div class="item item-fore1">
+                            <label for="userName"></label>
+                            <input id="userName" type="text" name="userName" autocomplete="off" placeholder="邮箱/用户名/已验证手机" />
+                            <span class="clear-btn"></span>
+                        </div>
+                        <div id="entry" class="item item-fore2">
+                            <label class="login-label pwd-label" for="nloginpwd"></label>
+                            <input type="password" id="password" name="password" class="itxt itxt-error" autocomplete="off" placeholder="密码" />
+                            <span class="clear-btn"></span>
+                        </div>
+                        <div class="item" style="margin-right:15px;">
+                            <a href="">忘记密码</a>
+                        </div>
+                        <div class="item item-fore3">
+                            <div class="login-btn">
+                                <button type="submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <ul style="display:flex;">
+                                <li style="width:68px;left:10px;">
+                                    <b class="QQ-icon"></b>
+                                    <a href="" style="margin-left:20px;"><span>QQ</span></a>
+                                    <span class="line" style="color:#ccc;padding:0 10px;position:absolute;">|</span>
+                                </li>
+                                <li style="width:48px;left:80px;">
+                                    <a href=""><b class="weixin-icon" style="background-position:-20px 0;"></b><span style="margin-left:20px;">微信</span></a>
+                                </li>
+                                <li class="" style="right:10px;">
+                                    <a href="/register.html" style="display:inline-block;width:20px;height:20px;background:#E4393C;color:white;border-radius:50%;line-height:20px;text-align:center;">></a>
+                                    <a href="/register.html" target="_blank" style="color:#E4393C"><span>立即注册</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer-2013">
+            <div class="links" style="word-spacing:10px;">
+                <a rel="nofollow" target="_blank" href="http://www.jd.com/intro/about.aspx">
+                关于我们
+            </a> |
+                <a rel="nofollow" target="_blank" href="http://www.jd.com/contact/">
+                联系我们
+            </a> |
+                <a rel="nofollow" target="_blank" href="http://zhaopin.jd.com/">
+                人才招聘
+            </a> |
+                <a rel="nofollow" target="_blank" href="http://www.jd.com/contact/joinin.aspx">
+                商家入驻
+            </a> |
+                <a rel="nofollow" target="_blank" href="http://www.jd.com/intro/service.aspx">
+                广告服务
+            </a> |
+                <a rel="nofollow" target="_blank" href="http://app.jd.com/">
+                手机京东
+            </a> |
+                <a target="_blank" href="http://club.jd.com/links.aspx">
+                友情链接
+            </a> |
+                <a target="_blank" href="http://media.jd.com/">
+                销售联盟
+            </a> |
+                <a href="http://club.jd.com/" target="_blank">
+                京东社区
+            </a> |
+                <a href="http://gongyi.jd.com" target="_blank">
+                京东公益
+            </a> |
+                <a target="_blank" href="http://en.jd.com/" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+            </div>
+            <div class="copyright" style="margin:-50px;">
+                Copyright&nbsp;&copy;&nbsp;2004-2017&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script/login.js"></script>
+
+    <script>
+        $('form').submit(function (e) {
+            e.preventDefault()
+            var userName = $.cookie('userName')
+            if (userName) {
+                alert('用户已经登录,不能重复登录!')
+            } else {
+                $.post(this.action, $(this).serialize(), (data) => {
+                    if (data.code == 'success') {
+                        location.href = '/'
+                    }
+                })
+            }
+        })
+    </script>
+</body>
+
+</html>

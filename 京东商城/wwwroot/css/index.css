@@ -1,0 +1,929 @@
+body {
+    background-color: #F6F6F6;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 170px;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: #E20F00;
+}
+
+.nav .bg-img {
+    width: 62%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav .nav_close {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #AB180D;
+    color: #aaa;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.nav-navSecond {
+    width: 100%;
+    height: 30px;
+    background-color: #E3E4E5;
+    color: #999999;
+}
+
+.nav-navSecond .nav-navSecond-bg {
+    width: 62%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.nav-navSecond .nav-navSecond-bg .nav-text {
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    font-size: 12px;
+}
+
+.nav-navSecond-bg .nav-text li a {
+    margin: 0 8px;
+}
+
+#navitems li {
+    margin: 10px 12px 0 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header .promo_link {
+    display: block;
+    width: 190px;
+    height: 40px;
+    background-image: url('../image/jdfp.png')
+}
+
+
+/*定位  */
+
+.cancel_line {
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: -1px;
+    z-index: 5
+}
+
+nav .location {
+    width: 320px;
+    height: 220px;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 0;
+    border: 1px solid #ccc;
+    color: #aaa;
+    padding: 0 10px 10px 10px;
+    display: none;
+}
+
+nav .location ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav .location ul li {
+    width: 55px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+nav .location ul li:hover {
+    background-color: #E7E7E7;
+    color: #E20F00;
+    cursor: pointer;
+}
+
+.click {
+    background-color: #E20F00;
+    color: white;
+}
+
+.otherClick {
+    background-color: white;
+    color: #E20F00;
+}
+
+.addressMouseover {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    z-index: 1;
+    background: white;
+}
+
+
+/*登录后  */
+
+.already_login {
+    width: 270px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #aaa;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.already_login:hover {
+    color: #c81623;
+}
+
+.already_login .top {
+    width: 270px;
+    height: 84px;
+    border-bottom: 1px solid #ccc;
+}
+
+.already_login .top .favicon img {
+    width: 60px;
+    border-radius: 50px;
+}
+
+.already_login .top .favicon .icon_plus {
+    display: inline-block;
+    background: url(http://misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+    background-position: -100px -296px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 16px;
+}
+
+.already_login .down {
+    width: 270px;
+}
+
+.already_login .down .left {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+.already_login .down .right {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+
+/*登录状态下的小轮播图  */
+
+.small-carousel {
+    width: 210px;
+    height: 82px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.small-carousel .carousel-container {
+    position: absolute;
+}
+
+.small-carousel .carousel {
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.small-carousel i {
+    display: inline-block;
+    width: 54px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(http://misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+    background-repeat: no-repeat;
+}
+
+.small-carousel .sprite-1 {
+    background-position: -222px -222px;
+}
+
+.small-carousel .sprite-2 {
+    background-position: 0 -148px;
+}
+
+.small-carousel .sprite-3 {
+    background-position: -74px -148px;
+}
+
+.small-carousel .sprite-4 {
+    background-position: -74px -148px;
+}
+
+.small-carousel .sprite-5 {
+    background-position: -148px -148px;
+}
+
+.small-carousel .sprite-6 {
+    background-position: -222px 0;
+}
+
+.small-carousel .sprite-7 {
+    background-position: -222px 0;
+}
+
+.small-carousel .sprite-8 {
+    background-position: 0 -222px;
+}
+
+.small-carousel .sprite-9 {
+    background-position: -148px 0;
+}
+
+.small-carousel .sprite-10 {
+    background-position: -148px 0;
+}
+
+.small-carousel .sprite-11 {
+    background-position: -74px -74px;
+}
+
+.small-carousel .sprite-12 {
+    background-position: 0 -74px;
+}
+
+.small-carousel .sprite-13 {
+    background-position: 0 -74px;
+}
+
+.small-carousel .sprite-14 {
+    background-position: -74px 0;
+}
+
+
+/*我的京东  */
+
+.nav_hover {
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    background: white;
+    border: 1px solid #ccc !important;
+    border-bottom: none !important;
+    z-index: 2;
+    text-align: center;
+}
+
+.myJD {
+    position: absolute;
+    top: 0;
+    left: 733px;
+    width: 280px;
+    height: 160px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #aaa;
+    z-index: 1;
+}
+
+.myJD .top {
+    width: 280px;
+    height: 90px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.myJD .down {
+    width: 280px;
+    padding: 10px;
+}
+
+.myJD ul {
+    width: 126px;
+}
+
+.myJD ul li {
+    margin-bottom: 10px;
+}
+
+
+/*客户服务  */
+
+.service {
+    width: 170px;
+    height: 248px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 167px;
+    z-index: 1;
+}
+
+.service .top,
+.service .down {
+    width: 170px;
+    padding: 10px;
+}
+
+.service .top {
+    height: 140px;
+    border-bottom: 1px solid #eee;
+}
+
+.service .top ul,
+.service .down ul {
+    width: 75px;
+}
+
+.service .top ul li,
+.service .down ul li {
+    height: 24px;
+}
+
+
+/*网站导航  */
+
+.GPS {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid #ccc !important;
+}
+
+.nav-submenu {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 1190px;
+    height: 180px;
+    margin: 0 auto;
+    font-size: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-submenu li {
+    margin-top: 10px;
+}
+
+.submenu-two {
+    margin-top: 27px;
+}
+
+
+/*侧边导航栏  */
+
+.sidebar_text {
+    background-color: #f7f7f7;
+    width: 998px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 0;
+    left: 190px;
+    font-size: 12px;
+    z-index: 1;
+    padding: 20px 0 10px;
+    /* transition: top .25s ease; */
+}
+.sidebar_text dd:hover{
+    
+}
+.sidebar_text dd a:hover{
+    color: #B91623;
+}
+.cate_part1{
+    width: 800px;
+    float: left;
+}
+.cate_channel {
+    width: 800px;
+    height: 24px;
+    padding-left: 20px;
+}
+.cate_channel a{
+    float: left;
+    margin-right: 10px;
+    padding:0 10px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #6E6568;
+    color: white;
+}
+.cate_detail {
+    width: 800px;
+    padding: 10px 0 0 20px;
+}
+.cate_detail dl{
+    clear: both;
+    width: 780px;
+    position: relative;
+    /*padding-left: 80px;*/
+}
+.cate_detail dt {
+    float: left;
+    margin-top: 10px;
+    width: 70px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.cate_detail dd {
+    
+    float: right;
+    width: 700px;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+.cate_detail dd a{
+    float: left;
+    height: 16px;
+    border-left: 1px solid #e0e0e0;
+    padding: 0 10px;
+    margin: 4px 0;
+    line-height: 16px;
+    /*white-space: nowrap;*/
+    color: #666;
+}
+.fs {
+    width: 100%;
+    height: 480px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.fs .fs_right span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #AB180D;
+    color: #aaa;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.fs_col1 {
+    float: left;
+    height: 100%;
+    ;
+    width: 190px;
+    background-color: #6E6568;
+    margin-right: 10px;
+}
+
+.fs_col1 ul li a:hover {
+    color: #B91623;
+}
+
+.fs_col1 .cate_menu_item a,
+.fs_col1 .cate_menu_item span {
+    color: white;
+    font-size: 14px;
+}
+
+.fs_col1 .cate_menu_item {
+    padding-left: 12px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.fs_col1 ul {
+    padding: 16px 0;
+    height: 448px;
+    color: #fff;
+}
+
+.fs_col2 {
+    width: 790px;
+    float: left;
+    margin-right: 10px;
+}
+
+.fs_col2 #slideBox {
+    width: 790px;
+    height: 340px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fs_col2 .imgBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fs_col2 .carousel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.fs_col2 .show {
+    display: inline-block;
+}
+
+.fs_col2 .indicators {
+    width: 180px;
+    height: 20px;
+    position: absolute;
+    left: calc((100% - 180px)/2);
+    background-color: hsla(0, 0%, 100%, .3);
+    border-radius: 10px;
+    text-align: center;
+    bottom: 10px;
+}
+
+.fs_col2 .buttons span {
+    width: 30px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    background-color: hsla(0, 0%, 0%, .3);
+    position: absolute;
+    top: calc((100% - 60px)/2);
+    display: none;
+}
+
+.fs_col2 .buttons #prev {
+    left: 0;
+}
+
+.fs_col2 .buttons #next {
+    right: 0;
+}
+
+.fs_col2 .indicators span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 12px;
+}
+
+.fs_col2 .indicators span.current {
+    background-color: red;
+}
+
+.fs_col3 {
+    float: right;
+    width: 190px;
+    height: 100%;
+    background-color: white;
+}
+
+.fs_col3 .HI,
+.fs_col3 .notice {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.fs_col3 .HI,
+.fs_col3 .notice {
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.fs_col3 .HI {
+    height: 115px;
+}
+
+.fs_col3 .notice {
+    height: 154px;
+}
+
+.fs_col3 .telephone_charge {
+    height: 210px;
+}
+
+.fs_col3 .newcomer {
+    height: 24px;
+    margin-top: 10px;
+}
+
+.fs_col3 .newcomer a {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    border: 2px solid #e01222;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #e01222;
+}
+
+.fs_col3 .notice .promotion {
+    height: 27px;
+    line-height: 27px;
+    border-bottom: 1px solid #F6F6F6;
+    position: relative;
+    font-size: 12px;
+}
+
+.fs_col3 .notice .promotion .active {
+    position: absolute;
+    bottom: -1px;
+    left: -2px;
+    width: 28px;
+    height: 2px;
+    background-color: #db192b;
+}
+
+.fs_col3 .notice .promotion a {
+    display: inline-block;
+}
+
+.fs_col3 .notice .notice_content {
+    padding: 12px 0;
+    font-size: 12px;
+    position: relative;
+}
+
+.fs_col3 .notice .notice_content ul {
+    position: absolute;
+}
+
+.fs_col3 .notice .notice_content ul li {
+    line-height: 24px;
+    max-width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fs_col3 .telephone_charge {
+    position: relative;
+}
+
+.fs_col3 .telephone_charge ul {
+    width: 190px;
+    height: 210px;
+    overflow: hidden;
+}
+
+.fs_col3 .telephone_charge .all ul li {
+    position: relative;
+    float: left;
+    width: 47px;
+    height: 69px;
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+.fs_col3 .telephone_charge .all ul li a {
+    padding-top: 14px;
+    height: 55px;
+    text-align: center;
+}
+
+.fs_col3 .telephone_charge .all ul li i {
+    display: block;
+    margin: 10px;
+    background-image: url(http://misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);
+    background-size: 156px 148px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_1 {
+    background-position: 0 -88px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_2 {
+    background-position: 0 -44px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_3 {
+    background-position: -44px -88px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_4 {
+    background-position: -88px 0;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_5 {
+    background-position: -88px -44px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_6 {
+    background-position: 0 0;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_7 {
+    background-position: -44px -44px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_8 {
+    background-position: -88px -88px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_9 {
+    background-position: 0 -88px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_10 {
+    background-position: -132px 0;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_11 {
+    background-position: -132px -44px;
+}
+
+.fs_col3 .telephone_charge .all ul li .sprite_12 {
+    background-position: -132px -88px;
+}
+
+.fs_col3 .telephone_charge .toggle {
+    position: absolute;
+    top: 0;
+}
+
+.fs_col3 .telephone_charge .toggle .toggle_title ul li {
+    display: inline-block;
+    width: 47px;
+    height: 24px;
+    border-right: 1px solid #e7e7e7;
+}
+
+
+/*秒杀  */
+
+.seckilling {
+    width: 100%;
+    height: 305px;
+    margin-bottom: 30px;
+    /* border: 1px solid black; */
+}
+
+.seckilling_content {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.seckilling_content .JDMS {
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    padding: 0 20px 0 30px;
+    position: relative;
+    background: url(http://misc.360buyimg.com/mtd/pc/index/2.0.0/home/images/seckill_hd.png);
+    background-repeat: no-repeat;
+}
+
+.seckilling_content .JDMS .left {
+    width: 304px;
+}
+
+.seckilling_content .JDMS .left i {
+    display: inline-block;
+    background: url(http://misc.360buyimg.com/mtd/pc/index/2.0.0/home/images/sprite_index@1x.png);
+    background-size: 218px 188px;
+    background-repeat: no-repeat;
+}
+
+.seckilling_content .JDMS .left .left-top {
+    background-position: -190px -48px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+}
+
+.seckilling_content .JDMS .left .clock {
+    background-position: 0 -40px;
+    width: 34px;
+    height: 40px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.seckilling_content .JDMS .left h3 {
+    display: inline-block;
+    font-size: 26px;
+    height: 40px;
+    padding-top: 15px;
+    position: absolute;
+}
+
+.seckilling_content .JDMS .left a {
+    width: 150px;
+    display: inline-block;
+    color: white;
+    margin-top: 8px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.seckilling_content .JDMS .left a i {
+    background-position: -154px -40px;
+    width: 15px;
+    height: 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+.seckilling_content .right {
+    padding: 0 10px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    line-height: 55px;
+    color: white;
+}
+
+.seckilling_content .right .Countdown {
+    width: 150px;
+    height: 55px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+.seckilling_content .right .Countdown .countdown-section {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #440106;
+    color: #f90013;
+    border-radius: 3px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+
+.seckilling_content .right .Countdown span {
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.countdown-amount {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.countdown-period {
+    color: black;
+    position: absolute;
+    top: 10px;
+    margin-left: 18px;
+}

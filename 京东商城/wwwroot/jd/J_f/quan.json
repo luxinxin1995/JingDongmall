@@ -1,0 +1,50 @@
+[{
+  "boxHd": {
+    "title": "领券中心",
+    "subtitle": "前往领券中心",
+    "subTitLink": "https://a.jd.com/"
+  },
+  "boxBd": {
+    "item": [{
+        "link": "https://a.jd.com",
+        "img": "http://img14.360buyimg.com/n7/s140x140_jfs/t2119/335/260162897/562457/e758f968/55fbb8a6N64863ad3.jpg!q90.webp",
+        "coupon": {
+          "price": "16",
+          "desc": "仅可购买京东自营图书音像商品",
+          "limit": "消费满200元可用",
+          "more": "更多好券"
+        }
+      },
+      {
+        "link": "https://a.jd.com/coupons.html?cat=10&st=2&page=1&ct=4",
+        "img": "http://m.360buyimg.com/babel/s140x140_jfs/t7219/127/3177758410/12521/1fba2cda/59bb3a7fN6e98f121.jpg!q90",
+        "coupon": {
+          "price": "1500",
+          "desc": "仅可购买部分自营瑞表商品",
+          "limit": "消费满20000元可用",
+          "more": "更多服饰箱包券"
+        }
+      },
+      {
+        "link": "https://a.jd.com/coupons.html?cat=11&st=2&page=1&ct=4",
+        "img": "http://m.360buyimg.com/babel/s140x140_jfs/t8803/37/1744413889/8610/4da41d08/59bf1d04Nd8624858.jpg!q90",
+        "coupon": {
+          "price": "1500",
+          "desc": "仅可购买自营冰洗冷品类部分商品",
+          "limit": "消费满10000元可用",
+          "more": "更多数码家电券"
+        }
+      },
+      {
+        "link": "https://a.jd.com/coupons.html?cat=12&st=2&page=1&ct=4",
+        "img": "http://m.360buyimg.com/babel/s140x140_jfs/t8254/302/1452353271/12954/25b59ae5/59b9de1aN75503f44.jpg!q90",
+        "coupon": {
+          "price": "1000",
+          "desc": "仅可购买家具建材部分商品",
+          "limit": "消费满4999元可用",
+          "more": "更多家居家纺券"
+        }
+      }
+    ]
+  }
+}]
