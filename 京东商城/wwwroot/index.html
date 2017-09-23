@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="" href="/css/base.css">
     <link rel="stylesheet" type="" href="/css/animate.css">
     <link rel="stylesheet" type="" href="/css/index.css">
+    <link rel="stylesheet" type="" href="/css/swiper.min.css">
     <!--导入倒计时插件  -->
     <script src="/script/js/jquery.plugin.min.js"></script>
     <script src="/script/js/jquery.countdown.min.js"></script>
@@ -450,7 +451,7 @@
     <!--中间轮播图-侧边导航栏  -->
     <div class="fs">
 
-        <div class="fs_left" style="position:absolute;left:114px;">
+        <div class="fs_left" style="position:absolute;left:115px;">
             <a href="">
                 <img src="http://img13.360buyimg.com/da/jfs/t9409/334/1939035495/27477/5f141b76/59c1d488N2c61e549.png" alt="">
             </a>
@@ -469,7 +470,8 @@
                     <div class="cate_detail"></div>
                 </div>
                 <div class="cate_part2">
-
+                    <div class="brand"></div>
+                    <div class="brand_img"></div>
                 </div>
             </div>
             <div class="fs_col1">
@@ -707,42 +709,81 @@
                 </div>
             </div>
             <!--秒杀轮播图  -->
-
+            <div class="JDMS_carousel">
+                <div class="JDMS_carousel_1">
+                    <span class="left glyphicon glyphicon-chevron-left"></span>
+                    <span class="right glyphicon glyphicon-chevron-right"></span>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="img0">Slide 1</div>
+                            <div class="swiper-slide" id="img1">Slide 2</div>
+                            <div class="swiper-slide" id="img2">Slide 3</div>
+                            <div class="swiper-slide" id="img3">Slide 4</div>
+                            <div class="swiper-slide" id="img4">Slide 5</div> 
+                        </div>
+                        <!--按钮  -->
+                         <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="JDMS_carousel_2"></div>
+            </div>
         </div>
     </div>
 
     <script src="./script/index.js"></script>
     <script src="./script/catedata.js"></script>
+    <script src="./script/js/swiper.min.js"></script>
     <script>
-        $('.cate_menu_item').mouseover(function () {
-            $('.sidebar_text').removeClass('hidden')
-            $('.cate_channel').empty()
-            sidebarArr[1][$(this).index()].catePartL.channel.forEach(function (item) {
-                $('.cate_channel').append(
+        // 秒杀数据渲染
+        // $('.seckilling .JDMS_carousel_1 ul').empty()
+        // console.log(seckillingArr[0].bd.skitems)
+        // console.log(seckillingArr[0].bd.skitems[0].img)
+        
+        seckillingArr[0].bd.skitems.forEach(function (item) {
+            item.forEach(function (element, index) {
+                console.log(element)
+                $(`#img${index}`).append(
                     `
-                    <a href='${item.link}'>${item.text}＞</a>
-                    `
+            <div>
+                <div>
+                    <a href='${element.link}'>
+                        <img src='${element.img}'>
+                        <p>${element.text}</p>
+                    </a>
+                    <span></span>
+                </div>
+                <p class='price'>
+                    <span class='current'>
+                        <i>￥</i>
+                        <span>${element.price}</span>
+                    </span>
+                    <span class='origin'>
+                        <i>￥</i>
+                        <s>${element.priceOrgin}</s>
+                    </span>
+                </p> 
+            </div>
+            `
                 )
-            });
-            $('.cate_detail').empty()
-            sidebarArr[1][$(this).index()].catePartL.detail.forEach(function (item, index) {
-                $('.cate_detail').append(
-                    `
-                    <dl>
-                        <dt><a href=''>${item.tit.text}＞</a></dt>
-                        <dd id=${index}></dd>
-                    </dl>
-                    `
-                )
-                item.con.forEach(function (item) {
-                    $(`#${index}`).append(
-                        `
-                        <a href='${item.link}'>${item.text}</a>
-                        `
-                    )
-                });
+
             })
         })
+        // 秒杀左侧轮播图
+
+
+        // var swiper1 = new Swiper('.seckilling .JDMS_carousel_1 ul', {
+        //     prevButton: ''
+        // })
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            loop: true
+        });
     </script>
 </body>
 

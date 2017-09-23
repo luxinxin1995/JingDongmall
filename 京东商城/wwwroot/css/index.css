@@ -418,10 +418,11 @@ nav .location ul li:hover {
     font-size: 12px;
     z-index: 1;
     padding: 20px 0 10px;
-    /* transition: top .25s ease; */
+    display: flex;
 }
-.sidebar_text dd:hover{
-    
+.sidebar_text .cate_channel a:hover{
+    background-color: #5c5251;
+    color: #fff;
 }
 .sidebar_text dd a:hover{
     color: #B91623;
@@ -469,6 +470,9 @@ nav .location ul li:hover {
     padding: 6px 0;
     border-bottom: 1px solid #eee;
 }
+.cate_detail dl:last-child dd{
+    border-bottom: none;
+}
 .cate_detail dd a{
     float: left;
     height: 16px;
@@ -479,11 +483,38 @@ nav .location ul li:hover {
     /*white-space: nowrap;*/
     color: #666;
 }
+.cate_part2{
+    width: 198px;
+}
+.cate_part2 .brand a{
+    display: inline-block;
+    margin: 0 0 1px 1px;
+    padding: 0;
+    width: 83px;
+    height: 35px;
+}
+.cate_part2 .brand a img{
+    width: 82px;
+    height: 34px;
+}
+.cate_part2 .brand_img{
+    
+    margin: 10px auto 0;
+}
+.cate_part2 .brand_img a{
+    width: 168px;
+    
+}
+.cate_part2 .brand_img a img{
+    width: 168px;
+    height: 134px;
+    margin-bottom: 1px;
+}
 .fs {
     width: 100%;
     height: 480px;
     margin-bottom: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
 }
 
@@ -803,10 +834,11 @@ nav .location ul li:hover {
 }
 
 .seckilling_content {
+    /* overflow: hidden; */
     width: 1190px;
-    height: 100%;
+    height: 305px;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .seckilling_content .JDMS {
@@ -926,4 +958,122 @@ nav .location ul li:hover {
     position: absolute;
     top: 10px;
     margin-left: 18px;
+}
+/*秒杀轮播图  */
+.seckilling .JDMS_carousel{
+    width: 1190px;
+    display: flex;
+}
+.seckilling .JDMS_carousel .JDMS_carousel_1{
+    /* overflow: hidden;  */
+    width: 1000px;
+    height:240px;
+    margin-right: 1px;
+    border: 1px solid black; 
+    position: relative;
+}
+/* .JDMS_carousel_1 .left,.JDMS_carousel_1 .right{
+    display: inline-block;
+    position: absolute;
+    top: 85px;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+    padding:0;
+    background-color: rgba(0, 0, 0, .1);
+    color: #666;
+    z-index: 3;
+}
+.JDMS_carousel_1 .left:hover,.JDMS_carousel_1 .right:hover{
+    cursor: pointer;
+}
+.JDMS_carousel_1 .left{
+    left: 5px;
+} */
+
+.seckilling .JDMS_carousel .JDMS_carousel_2{
+    width: 180px;
+    height:240px;
+    border: 1px solid black; 
+    float: right;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+ .seckilling .JDMS_carousel_1 ul{
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+.seckilling .JDMS_carousel_1{
+    width: 200px;
+    height: 225px;
+     padding: 0 15px; 
+    border-right: 1px solid #e7e7e7;
+}
+.seckilling .JDMS_carousel_1 div{
+    position: relative;
+    text-align: center;
+}
+.seckilling .JDMS_carousel_1 div a{
+    width: 170px;
+    height: 196px;
+    display: block;
+    color: #666;
+}
+.seckilling .JDMS_carousel_1 div a img{
+    width: 130px;
+    height: 130px;
+    margin:17px 0;
+}
+.seckilling .JDMS_carousel_1 div a p{
+    color: #999;
+    display: block;
+    max-width: 100%;
+    font-size: 12px;
+    text-align: left;
+    height: 32px;
+    line-height: 16px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+.seckilling .JDMS_carousel_1 div span{
+    position: absolute;
+    left: 0;
+    top: 130px;
+    text-align: center;
+    background: url(http://misc.360buyimg.com/mtd/pc/index/2.0.0/home/images/sprite_index@1x.png);
+    background-position: 0 0;
+    background-size: 218px 188px;
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 20px;
+}
+.seckilling .JDMS_carousel_1 .price{
+    padding: 3px 0;
+    height: 25px;
+}
+.seckilling .JDMS_carousel_1 .price .current{
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 8px;
+    color: #f10214;
+}
+.JDMS_carousel_1 .price i{
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 3px;
+    font-style: normal;
+}
+.seckilling .JDMS_carousel_1 .price .origin{
+    color: #999;
+    font-size: 12px;
+}
+.seckilling .JDMS_carousel_1 .price .origin del{
+    font-weight: 400px;
+} 
+.swiper-slide{
+    display: flex;
 }

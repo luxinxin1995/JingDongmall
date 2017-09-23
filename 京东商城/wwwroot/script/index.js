@@ -180,6 +180,67 @@ $('.already_login .down .right').click(function (e) {
     changeSmallIndex();
 })
 
+// 左侧导航栏
+$('.cate_menu_item').mouseover(function () {
+            $('.sidebar_text').removeClass('hidden')
+            $('.cate_channel').empty()
+            sidebarArr[1][$(this).index()].catePartL.channel.forEach(function (item) {
+                $('.cate_channel').append(
+                    `
+                    <a href='${item.link}'>${item.text}＞</a>
+                    `
+                )
+            });
+            $('.cate_detail').empty()
+            sidebarArr[1][$(this).index()].catePartL.detail.forEach(function (item, index) {
+                $('.cate_detail').append(
+                    `
+                    <dl>
+                        <dt><a href=''>${item.tit.text}＞</a></dt>
+                        <dd id=${index}></dd>
+                    </dl>
+                    `
+                )
+                item.con.forEach(function (item) {
+                    $(`#${index}`).append(
+                        `
+                        <a href='${item.link}'>${item.text}</a>
+                        `
+                    )
+                });
+            })
+            $('.brand').empty()
+            sidebarArr[1][$(this).index()].catePartR.brand.forEach(function (item, index) {
+                $('.brand').append(
+                    `
+                    <a href='${item.link}'>
+                        <img src='${item.img}'>
+                    </a>
+                    `
+                )
+            })
+            $('.brand_img').empty()
+            sidebarArr[1][$(this).index()].catePartR.promo.forEach(function (item, index) {
+                $('.brand_img').append(
+                    `
+                    <a href='${item.link}'>
+                        <img src='${item.img}'>
+                    </a>
+                    `
+                )
+            })
+
+            $('.sidebar_text').mouseenter(function () {
+                $(this).removeClass('hidden')
+            })
+            $('.sidebar_text').mouseleave(function () {
+                $(this).addClass('hidden')
+            })
+        })
+        $('.cate_menu_item').mouseout(function () {
+            $('.sidebar_text').addClass('hidden')
+        })
+
 // 秒杀倒计时
 $(function () {
     var date = new Date('2017-09-23 12:00:00')
