@@ -9,6 +9,13 @@ html,body,div,ul,li,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,p,table,thead,tbody,tfoot,tr,t
     border:0;
 }
 body{
+    position: relative;
+    overflow-x: hidden;
+}
+i{
+    font-style: normal;
+}
+body{
     min-width: 1920px;
 }
 /* 列表 */

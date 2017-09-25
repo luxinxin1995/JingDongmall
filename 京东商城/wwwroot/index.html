@@ -710,80 +710,838 @@
             </div>
             <!--秒杀轮播图  -->
             <div class="JDMS_carousel">
-                <div class="JDMS_carousel_1">
-                    <span class="left glyphicon glyphicon-chevron-left"></span>
-                    <span class="right glyphicon glyphicon-chevron-right"></span>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" id="img0">Slide 1</div>
-                            <div class="swiper-slide" id="img1">Slide 2</div>
-                            <div class="swiper-slide" id="img2">Slide 3</div>
-                            <div class="swiper-slide" id="img3">Slide 4</div>
-                            <div class="swiper-slide" id="img4">Slide 5</div> 
-                        </div>
-                        <!--按钮  -->
-                         <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="img0"></div>
+                        <div class="swiper-slide" id="img1"></div>
+                        <div class="swiper-slide" id="img2"></div>
+                        <div class="swiper-slide" id="img3"></div>
+                        <div class="swiper-slide" id="img4"></div>
                     </div>
+                    <!--按钮  -->
+                    <div class="swiper-button-next glyphicon glyphicon-chevron-right"></div>
+                    <div class="swiper-button-prev glyphicon glyphicon-chevron-left"></div>
                 </div>
-                <div class="JDMS_carousel_2"></div>
+                <div class="JDMS_carousel_right">
+                    <ul class="img">
+                        <li>
+                            <a href="http://miaosha.jd.com/pinpailist.html">
+                            <img src="http://img10.360buyimg.com/mobilecms/s360x450_jfs/t8503/286/2064616052/68182/d90dc0ed/59c48cb5N8941eb63.png" alt="">
+                            </a>
+                        </li>
+                        <li class="opacity">
+                            <a href="http://miaosha.jd.com/brandlist.html">
+                            <img src="http://img10.360buyimg.com/mobilecms/s360x450_jfs/t9694/152/130103704/53491/cca7ec88/59c684c0Ne94edec5.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="circle">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-
-    <script src="./script/index.js"></script>
-    <script src="./script/catedata.js"></script>
-    <script src="./script/js/swiper.min.js"></script>
-    <script>
-        // 秒杀数据渲染
-        // $('.seckilling .JDMS_carousel_1 ul').empty()
-        // console.log(seckillingArr[0].bd.skitems)
-        // console.log(seckillingArr[0].bd.skitems[0].img)
-        
-        seckillingArr[0].bd.skitems.forEach(function (item) {
-            item.forEach(function (element, index) {
-                console.log(element)
-                $(`#img${index}`).append(
-                    `
-            <div>
-                <div>
-                    <a href='${element.link}'>
-                        <img src='${element.img}'>
-                        <p>${element.text}</p>
+    <!--发现好货-->
+    <div class="findGood">
+        <div class="findGood_content">
+            <!--左-->
+            <div class="box left">
+                <!--标题-->
+                <div class="box_hd hd_l">
+                    <i class="box_hd_arrow"></i>
+                    <i class="box_hd_dec dec_1"></i>
+                    <h3>发现好货</h3>
+                    <a href="http://fxhh.jd.com/index.html">发现品质生活
+                    <i></i>
                     </a>
-                    <span></span>
                 </div>
-                <p class='price'>
-                    <span class='current'>
-                        <i>￥</i>
-                        <span>${element.price}</span>
-                    </span>
-                    <span class='origin'>
-                        <i>￥</i>
-                        <s>${element.priceOrgin}</s>
-                    </span>
-                </p> 
+                <div class="box_bd">
+                    <ul>
+
+                    </ul>
+                </div>
             </div>
-            `
-                )
+            <!--中-->
+            <!--会买专辑  -->
+            <div class="box middle">
+                <!--标题-->
+                <div class="box_hd hd_m">
+                    <i class="box_hd_arrow"></i>
+                    <i class="box_hd_dec dec_2"></i>
+                    <h3>会买专辑</h3>
+                    <a href="http://fxhh.jd.com/index.html">发现品质生活
+                    <i></i>
+                    </a>
+                </div>
+                <div class="box_bd">
+                    <a href="javascript:;" class="left but hidden">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                    </a>
+                    <a href="javascript:;" class="right but hidden">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </a>
+                    <ul class="circle">
+                        <li class="current"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="m_container1 con">
+                        <span class="line"></span>
+                    </div>
+                    <div class="m_container2 con hidden">
+                        <span class="line"></span>
+                    </div>
+                    <div class="m_container3 con hidden">
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <!--右-->
+            <!--排行榜  -->
+            <div class="box right">
+                <!--标题-->
+                <div class="box_hd hd_r">
+                    <i class="box_hd_arrow"></i>
+                    <i class="box_hd_dec dec_3"></i>
+                    <h3>排行榜</h3>
+                    <a href="http://fxhh.jd.com/index.html">发现品质生活
+                    <i></i>
+                    </a>
+                </div>
+                <div class="box_bd1">
+                    <div class="title">
+                        <div class="active"></div>
+                    </div>
+                    <div class="top_bd">
+                        <div class="top_content top1">
+                            <ul>
 
-            })
+                            </ul>
+                        </div>
+                        <div class="top_content top2 hidden">
+                            <ul>
+
+                            </ul>
+                        </div>
+                        <div class="top_content top3 hidden">
+                            <ul>
+
+                            </ul>
+                        </div>
+                        <div class="top_content top4 hidden">
+                            <ul>
+
+                            </ul>
+                        </div>
+                        <div class="top_content top5 hidden">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--领券中心  -->
+    <div class="tickets_me_container">
+        <div class="tickets_me">
+            <div class="tickets">
+                <div class="box_hd center">
+                    <i class="arrow"></i>
+                    <i class="dec"></i>
+                    <h3>领券中心</h3>
+                    <a href="">
+                        前往领券中心
+                        <i class="arrows"></i>
+                    </a>
+                </div>
+                <div class="box_bd">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="me">
+                <div class="box_hd rightMe">
+                    <i class="arrow"></i>
+                    <i class="dec"></i>
+                    <h3>领券中心</h3>
+                    <a href="">
+                        前往领券中心
+                        <i class="arrows"></i>
+                    </a>
+                </div>
+                <div class="box_bd">
+                    <ul class="content"></ul>
+                    <ul class="circle">
+                        <li class="current"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <a href="javascript:;" class="but btn_left glyphicon glyphicon-chevron-left opacity"></a>
+                    <a href="javascript:;" class="but btn_right glyphicon glyphicon-chevron-right opacity"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--享品质上方div  -->
+    <div class="tickets_bottom">
+        <div class="inner">
+            <ul>
+                <li>
+                    <a href="http://sale.jd.com/act/J7hdARltN1HQBo.html">
+                        <img src="http://m.360buyimg.com/babel/jfs/t9964/360/67371279/61540/616f3ee7/59c4eef7Nf51ebe01.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm49pYVZxMfDb6weLNNK2lSCJp6re1N2GPockOAwFuIhD9WHWobmRFqcUWxwF5ZcqwWmB/9y2AKzLOrhG8f6Fy/S4fLWlvRBkxoM4QrINBB7LUgV9UrghZnNEGBS+x6IXunNIJPLnds46EtyW2ZI16qkAkuOIdHLRtkW/q4CIdzM/gKe2acHG0Ajuj9L8JXxidE+hmSpgLz9xmR1xEiObDPEY2cXhMASnNvmSUyLnxgFsxMv49nQdfWafuMVCtVmz8qXOlcppL6VE6XAjxQTKJJ8WOo1bdnPYgppNB+nDWfC8A==&cv=2.0&url=//sale.jd.com/act/Lx85O3nN17.html">
+                        <img src="http://img1.360buyimg.com/da/jfs/t8869/235/1491356481/25139/8c492654/59c2016fNc2b4dae3.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm6eVjLbFdvLRdVrFcON9oomle8KWDSSIj6XX+4Ky+h9buEZXQ1MzcablP3w+wC/Vb7wPa1FQIYscOSL3h0xnTvI4fLWlvRBkxoM4QrINBB7LfupImjtWkGq84gQAj2nQgIQiS7II08IEJ3Oc1H4I4xcPg/5lcwJ9ODRALR4zzW6KndBYMCVFxlbZRUKij7Z92358nvVR6ukal9j8UOUAB7XX2eOVm6BWJgL+STwEf7TGxhRUJO1SzbN9ghEGFXB7f90eAcCcxt4/aYpXclWi6Ay4kZYtET9oANOMTk0wDstKw==&cv=2.0&url=//sale.jd.com/act/HPSwsaOycFGumklb.html">
+                        <img src="http://img1.360buyimg.com/da/jfs/t10351/115/1333520/15632/572d99f9/59c331d8N8beabce9.jpg!q90" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--享品质  -->
+    <div class="entry">
+        <div class="entry_title">
+            <h3>享品质</h3>
+        </div>
+        <div class="entry_inner">
+            <ul class="entry_big">
+                <li class="item1 item">
+                    <div class="item1_inner">
+                        <div class="item1_hd">
+                            <a href="http://jdlive.jd.com">
+                                <h4>京东直播</h4>
+                                <span>更多<i></i></span>
+                            </a>
+                        </div>
+                        <ul class="item1_img">
+                            <!--1  -->
+                            <li>
+                                <div class="cover">
+                                    <img src="http://img10.360buyimg.com/live/s390x350_jfs/t8023/166/2124947616/82633/b9e240da/59c60d69N676c72fe.jpg" alt="">
+                                </div>
+                                <div class="mask"></div>
+                                <div class="info">
+                                    <h5>
+                                        <i></i> 无珠宝不女人
+                                    </h5>
+                                    <p>分享直播间送礼物</p>
+                                </div>
+                            </li>
+                            <!--2  -->
+                            <li class="opacity">
+                                <div class="cover">
+                                    <img src="http://img11.360buyimg.com/live/s390x350_jfs/t10996/308/7983307/39943/50b7f9eb/59c35648N4dc6cfe8.jpg" alt="">
+                                </div>
+                                <div class="mask"></div>
+                                <div class="info">
+                                    <h5>
+                                        <i></i> 珍珠是女人天生的珠宝
+                                    </h5>
+                                    <p>爆款秒杀</p>
+                                </div>
+                            </li>
+                            <!--3  -->
+                            <li class="opacity">
+                                <div class="cover">
+                                    <img src="http://img12.360buyimg.com/live/s390x350_jfs/t9373/188/1472054491/73222/5d253ae9/59c20ca8Nb751fdf1.jpg" alt="">
+                                </div>
+                                <div class="mask"></div>
+                                <div class="info">
+                                    <h5>
+                                        <i></i> 浴室高颜值管家来了
+                                    </h5>
+                                    <p>下单即送0元厨宝安装材料</p>
+                                </div>
+                            </li>
+                            <!--4  -->
+                            <li class="opacity">
+                                <div class="cover">
+                                    <img src="http://img13.360buyimg.com/live/s390x350_jfs/t10102/42/15933643/106771/29cdfb81/59c383bdN7afcbec8.jpg" alt="">
+                                </div>
+                                <div class="mask"></div>
+                                <div class="info">
+                                    <h5>
+                                        <i></i> 野生蜂蜜让生活甜如蜜 | 高山村
+                                    </h5>
+                                    <p>全场满99减40买蜂蜜送月饼礼</p>
+                                </div>
+                            </li>
+                            <!--5  -->
+                            <li class="opacity">
+                                <div class="cover">
+                                    <img src="http://img14.360buyimg.com/live/s390x350_jfs/t8599/360/2184651664/75456/8b654aa6/59c669f6N83c77989.jpg" alt="">
+                                </div>
+                                <div class="mask"></div>
+                                <div class="info">
+                                    <h5>
+                                        <i></i> 迪斯个护就在这里
+                                    </h5>
+                                    <p>多次抽奖</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="circle">
+                            <li class="current"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="javascript:;" class="but btn_left glyphicon glyphicon-chevron-left"></a>
+                        <a href="javascript:;" class="but btn_right glyphicon glyphicon-chevron-right"></a>
+                        <div class="lunbo_content"></div>
+                        <div class="R_player"></div>
+                        <a href="javascript:;" class="playBtn"></a>
+                        <div class="playMask"></div>
+                        <div class="tip"></div>
+                        <a href="http://jdlive.jd.com" class="disabled"></a>
+                    </div>
+                </li>
+                <li class="item2 item item_small">
+                    <a href="http://sale.jd.com/act/8OuyNbeoZaXfqDhL.html">
+                        <div class="info_bg">
+                            <div class="info">
+                                <h4>新品首发</h4>
+                                <p>三星 Note8 预约~</p>
+                            </div>
+                        </div>
+                        <img src="http://img10.360buyimg.com/babel/s400x170_jfs/t9877/308/57639824/10979/f2974b0f/59c4c166N933796b2.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li class="item3 item item_small">
+                    <a href="http://sale.jd.com/act/8OuyNbeoZaXfqDhL.html">
+                        <div class="info_bg">
+                            <div class="info">
+                                <h4>新品首发</h4>
+                                <p>三星 Note8 预约~</p>
+                            </div>
+                        </div>
+                        <img src="http://img10.360buyimg.com/babel/s400x170_jfs/t9877/308/57639824/10979/f2974b0f/59c4c166N933796b2.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li class="item4 item item_small">
+                    <a href="http://sale.jd.com/act/8OuyNbeoZaXfqDhL.html">
+                        <div class="info_bg">
+                            <div class="info">
+                                <h4>新品首发</h4>
+                                <p>三星 Note8 预约~</p>
+                            </div>
+                        </div>
+                        <img src="http://img10.360buyimg.com/babel/s400x170_jfs/t9877/308/57639824/10979/f2974b0f/59c4c166N933796b2.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li class="item5 item item_small">
+                    <a href="http://sale.jd.com/act/8OuyNbeoZaXfqDhL.html">
+                        <div class="info_bg">
+                            <div class="info">
+                                <h4>新品首发</h4>
+                                <p>三星 Note8 预约~</p>
+                            </div>
+                        </div>
+                        <img src="http://img10.360buyimg.com/babel/s400x170_jfs/t9877/308/57639824/10979/f2974b0f/59c4c166N933796b2.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li class="item6 item item_small">
+                    <a href="http://sale.jd.com/act/8OuyNbeoZaXfqDhL.html">
+                        <div class="info_bg">
+                            <div class="info">
+                                <h4>新品首发</h4>
+                                <p>三星 Note8 预约~</p>
+                            </div>
+                        </div>
+                        <img src="http://img10.360buyimg.com/babel/s400x170_jfs/t9877/308/57639824/10979/f2974b0f/59c4c166N933796b2.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li class="item7 item item_small">
+                    <a href="http://sale.jd.com/act/8OuyNbeoZaXfqDhL.html">
+                        <div class="info_bg">
+                            <div class="info">
+                                <h4>新品首发</h4>
+                                <p>三星 Note8 预约~</p>
+                            </div>
+                        </div>
+                        <img src="http://img10.360buyimg.com/babel/s400x170_jfs/t9877/308/57639824/10979/f2974b0f/59c4c166N933796b2.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li class="item8 item_small right_bottom">
+                    <a href="http://sale.jd.com/act/8OuyNbeoZaXfqDhL.html">
+                        <div class="info_bg">
+                            <div class="info">
+                                <h4>设计师推荐</h4>
+                                <p>家装节</p>
+                            </div>
+                        </div>
+                        <img src="http://img11.360buyimg.com/babel/s400x170_jfs/t5797/82/1715912711/22172/914864e/5928fa5dN52ded415.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li class="item9 item_small right_bottom">
+                    <a href="http://sale.jd.com/act/8OuyNbeoZaXfqDhL.html">
+                        <div class="info_bg">
+                            <div class="info">
+                                <h4>全球尖货</h4>
+                                <p>全球自营好货</p>
+                            </div>
+                        </div>
+                        <img src="http://img12.360buyimg.com/babel/s400x170_jfs/t6181/345/678879290/9594/797894b5/59437174N541210b1.jpg!q90" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--享品质下方div  -->
+    <div class="tickets_bottom">
+        <div class="inner">
+            <ul>
+                <li>
+                    <a href="http://sale.jd.com/act/J7hdARltN1HQBo.html">
+                        <img src="http://m.360buyimg.com/babel/jfs/t9964/360/67371279/61540/616f3ee7/59c4eef7Nf51ebe01.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm49pYVZxMfDb6weLNNK2lSCJp6re1N2GPockOAwFuIhD9WHWobmRFqcUWxwF5ZcqwWmB/9y2AKzLOrhG8f6Fy/S4fLWlvRBkxoM4QrINBB7LUgV9UrghZnNEGBS+x6IXunNIJPLnds46EtyW2ZI16qkAkuOIdHLRtkW/q4CIdzM/gKe2acHG0Ajuj9L8JXxidE+hmSpgLz9xmR1xEiObDPEY2cXhMASnNvmSUyLnxgFsxMv49nQdfWafuMVCtVmz8qXOlcppL6VE6XAjxQTKJJ8WOo1bdnPYgppNB+nDWfC8A==&cv=2.0&url=//sale.jd.com/act/Lx85O3nN17.html">
+                        <img src="http://img1.360buyimg.com/da/jfs/t8869/235/1491356481/25139/8c492654/59c2016fNc2b4dae3.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm6eVjLbFdvLRdVrFcON9oomle8KWDSSIj6XX+4Ky+h9buEZXQ1MzcablP3w+wC/Vb7wPa1FQIYscOSL3h0xnTvI4fLWlvRBkxoM4QrINBB7LfupImjtWkGq84gQAj2nQgIQiS7II08IEJ3Oc1H4I4xcPg/5lcwJ9ODRALR4zzW6KndBYMCVFxlbZRUKij7Z92358nvVR6ukal9j8UOUAB7XX2eOVm6BWJgL+STwEf7TGxhRUJO1SzbN9ghEGFXB7f90eAcCcxt4/aYpXclWi6Ay4kZYtET9oANOMTk0wDstKw==&cv=2.0&url=//sale.jd.com/act/HPSwsaOycFGumklb.html">
+                        <img src="http://img1.360buyimg.com/da/jfs/t10351/115/1333520/15632/572d99f9/59c331d8N8beabce9.jpg!q90" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--爱生活  -->
+    <div class="life">
+        <div class="life_title">
+            <h3>爱生活</h3>
+        </div>
+    </div>
+    <!--购特色  -->
+    <div class="feature">
+        <div class="feature_title">
+            <h3>购特色</h3>
+        </div>
+        <div class="feature_inner">
+            <ul>
+                <li id="li_1">
+                    <a href="http://auction.jd.com/sifa.html">
+                        <div class="feature_bg">
+                            <div class="info">
+                                <h4 class="info_tit">司法拍卖</h4>
+                                <p>法院好货 公开抢拍</p>
+                            </div>
+                        </div>
+                        <img src="http://img10.360buyimg.com/babel/s140x190_jfs/t9298/33/902036725/37467/e565fb7c/59b0fdbdN920cdd6b.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li id="li_2">
+                    <a href="http://vogue.jd.com/">
+                        <div class="feature_bg">
+                            <div class="info">
+                                <h4 class="info_tit">环球时尚</h4>
+                                <p>环球名品,奢华精选</p>
+                            </div>
+                        </div>
+                        <img src="http://img11.360buyimg.com/babel/s140x190_jfs/t8980/353/925198411/34925/23dd7c99/59b124f9N9de5ea71.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li id="li_3">
+                    <a href="http://red.jd.com/">
+                        <div class="feature_bg">
+                            <div class="info">
+                                <h4 class="info_tit">品牌特卖</h4>
+                                <p>品牌限时特卖</p>
+                            </div>
+                        </div>
+                        <img src="http://img12.360buyimg.com/babel/s140x190_jfs/t9481/209/1386705074/13874/ed036c35/59b8e498N55e488a2.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li id="li_4">
+                    <a href="http://up.jd.com/?entrance=pc_sy_gts_a">
+                        <div class="feature_bg">
+                            <div class="info">
+                                <h4 class="info_tit">陪伴宝宝</h4>
+                                <p>买3免1</p>
+                            </div>
+                        </div>
+                        <img src="http://img13.360buyimg.com/babel/s140x190_jfs/t7969/233/2503326902/26500/d0153a03/59b0f42aNf2b0b825.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li id="li_5">
+                    <a href="http://b.jd.com">
+                        <div class="feature_bg">
+                            <div class="info">
+                                <h4 class="info_tit">企业采购</h4>
+                                <p>1000元E卡免费抽</p>
+                            </div>
+                        </div>
+                        <img src="http://img14.360buyimg.com/babel/s140x190_jfs/t8149/21/848364372/25904/dda24c27/59b009e8Nd2c21208.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li id="li_6">
+                    <a href="http://jr.jd.com/buy/index?from=ccgnb">
+                        <div class="feature_bg">
+                            <div class="info">
+                                <h4 class="info_tit">IN货推荐</h4>
+                                <p>手机新品享 12期免息</p>
+                            </div>
+                        </div>
+                        <img src="http://img10.360buyimg.com/babel/s140x190_jfs/t8641/304/893611604/10385/fff71e79/59b10bddN3ff336be.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li id="li_7">
+                    <a href="http://fupin.jd.com/">
+                        <div class="feature_bg">
+                            <div class="info">
+                                <h4 class="info_tit">京东扶贫</h4>
+                                <p>买特产,助贫农</p>
+                            </div>
+                        </div>
+                        <img src="http://img11.360buyimg.com/babel/s140x190_jfs/t9358/207/762318523/24650/8c03e1c7/59ae6bdaNefce52ef.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li id="li_8">
+                    <a href="http://healthservice.jd.com/">
+                        <div class="feature_bg">
+                            <div class="info">
+                                <h4 class="info_tit">健康服务</h4>
+                                <p>体检每满199减20</p>
+                            </div>
+                        </div>
+                        <img src="http://img12.360buyimg.com/babel/s140x190_jfs/t8266/113/1509157159/56029/eacfc039/59bb5a8eN89fea045.jpg!q90" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--还没逛够div  -->
+    <div class="tickets_bottom">
+        <div class="inner">
+            <ul>
+                <li>
+                    <a href="http://sale.jd.com/act/J7hdARltN1HQBo.html">
+                        <img src="http://m.360buyimg.com/babel/jfs/t9964/360/67371279/61540/616f3ee7/59c4eef7Nf51ebe01.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm49pYVZxMfDb6weLNNK2lSCJp6re1N2GPockOAwFuIhD9WHWobmRFqcUWxwF5ZcqwWmB/9y2AKzLOrhG8f6Fy/S4fLWlvRBkxoM4QrINBB7LUgV9UrghZnNEGBS+x6IXunNIJPLnds46EtyW2ZI16qkAkuOIdHLRtkW/q4CIdzM/gKe2acHG0Ajuj9L8JXxidE+hmSpgLz9xmR1xEiObDPEY2cXhMASnNvmSUyLnxgFsxMv49nQdfWafuMVCtVmz8qXOlcppL6VE6XAjxQTKJJ8WOo1bdnPYgppNB+nDWfC8A==&cv=2.0&url=//sale.jd.com/act/Lx85O3nN17.html">
+                        <img src="http://img1.360buyimg.com/da/jfs/t8869/235/1491356481/25139/8c492654/59c2016fNc2b4dae3.jpg!q90" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm6eVjLbFdvLRdVrFcON9oomle8KWDSSIj6XX+4Ky+h9buEZXQ1MzcablP3w+wC/Vb7wPa1FQIYscOSL3h0xnTvI4fLWlvRBkxoM4QrINBB7LfupImjtWkGq84gQAj2nQgIQiS7II08IEJ3Oc1H4I4xcPg/5lcwJ9ODRALR4zzW6KndBYMCVFxlbZRUKij7Z92358nvVR6ukal9j8UOUAB7XX2eOVm6BWJgL+STwEf7TGxhRUJO1SzbN9ghEGFXB7f90eAcCcxt4/aYpXclWi6Ay4kZYtET9oANOMTk0wDstKw==&cv=2.0&url=//sale.jd.com/act/HPSwsaOycFGumklb.html">
+                        <img src="http://img1.360buyimg.com/da/jfs/t10351/115/1333520/15632/572d99f9/59c331d8N8beabce9.jpg!q90" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--还没逛够  -->
+    <div class="stroll">
+        <div class="stroll_title">
+            <h3>还没逛够</h3>
+        </div>
+        <div class="stroll_inner">
+            <ul class="stroll_inner_content">
+
+            </ul>
+        </div>
+    </div>
+    <!--底部导航栏  -->
+    <footer class="footer hidden">
+        <div class="service1">
+            <div class="service_inner">
+                <ul>
+                    <li class="item1 item">
+                        <div>
+                            <h5></h5>
+                            <p>品类齐全,轻松购物</p>
+                        </div>
+                    </li>
+                    <li class="item2 item">
+                        <div>
+                            <h5></h5>
+                            <p>多仓直发,极速配送</p>
+                        </div>
+                    </li>
+                    <li class="item3 item">
+                        <div>
+                            <h5></h5>
+                            <p>正品行货,精致服务</p>
+                        </div>
+                    </li>
+                    <li class="item4 item">
+                        <div>
+                            <h5></h5>
+                            <p>天天低价,畅选无忧</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="help">
+            <div class="footer-center">
+                <ul class="cancelul">
+                    <li class="ulLi">
+                        <a class="lgrey mouseenterColor" href="">
+                            <h4><b>购物指南</b></h4>
+                        </a>
+                    </li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">购物流程</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">会员介绍</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">生活旅行</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">常见问题</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">大家电</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">联系客服</a></li>
+                </ul>
+                <ul class="cancelul">
+                    <li class="ulLi">
+                        <a class="lgrey mouseenterColor" href="">
+                            <h4><b>配送方式</b></h4>
+                        </a>
+                    </li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">上门自提</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">211限时达</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">配送服务查询</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">配送费收取标准</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">海外配送</a></li>
+
+                </ul>
+                <ul class="cancelul">
+                    <li class="ulLi">
+                        <a class="lgrey mouseenterColor" href="">
+                            <h4><b>支付方式</b></h4>
+                        </a>
+                    </li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">货到付款</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">在线支付</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">分期付款</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">邮局汇款</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">公司转账</a></li>
+                </ul>
+                <ul class="cancelul">
+                    <li class="ulLi">
+                        <a class="lgrey mouseenterColor" href="">
+                            <h4><b>售后服务</b></h4>
+                        </a>
+                    </li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">售后政策</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">价格保护</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">退款说明</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">返修/退换货</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">取消订单</a></li>
+                </ul>
+                <ul class="cancelul">
+                    <li class="ulLi">
+                        <a class="lgrey mouseenterColor" href="">
+                            <h4><b>特色服务</b></h4>
+                        </a>
+                    </li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">夺宝岛</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">DIY装机</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">延保服务</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">京东E卡</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">京东通信</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">京东JD+</a></li>
+                </ul>
+                <ul class="cancelul cover">
+                    <li class="ulLi">
+                        <a class="lgrey mouseenterColor" href="">
+                            <h4><b>京东自营覆盖区县</b></h4>
+                        </a>
+                    </li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">京东已向全国2661个区县提供自</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">营配送服务，支持货到付款、</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">POS机刷卡和售后上门服务。</a></li>
+                    <li class="ulLi"><a class="lgrey mouseenterColor" href="">查看详情></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="footer-footer">
+                <div class="footer-footer-span" style="margin-left:3px;margin-right:3px;text-align:center;">
+                    <span>关于我们</span>|
+                    <span>联系我们</span>|
+                    <span>联系客服</span>|
+                    <span>合作招商</span>|
+                    <span>商家帮助</span>|
+                    <span>营销中心</span>|
+                    <span>手机京东</span>|
+                    <span>友情链接</span>|
+                    <span>销售联盟</span>|
+                    <span>京东社区</span>|
+                    <span>风险监测</span>|
+                    <span>隐私政策</span>|
+                    <span>京东公益</span>|
+                    <span>English Site</span>|
+                    <span>Media & IR</span>
+                </div>
+                <div class="footer-footer-span" style="margin-left:3px;margin-right:3px;text-align:center;">
+                    <span>京公网安备 11000002000088号</span>|
+                    <span>京ICP证070359号</span>|
+                    <span>互联网药品信息服务资格证编号(京)-经营性-2014-0008</span>|
+                    <span>新出发京零 字第大120007号</span>
+
+                </div>
+                <div class="footer-footer-span" style="margin-left:3px;margin-right:3px;text-align:center;">
+                    <span>互联网出版许可证编号新出网证(京)字150号</span>|
+                    <span>出版物经营许可证|网络文化经营许可证京网文[2014]2148-348号</span>|
+                    <span>违法和不良信息举报电话：4006561155</span>
+                </div>
+                <div class="footer-footer-span" style="margin-left:3px;margin-right:3px;text-align:center;">
+                    <span>Copyright © 2004 - 2017  京东JD.com 版权所有</span>|
+                    <span>消费者维权热线：4006067733经营证照</span>
+                </div>
+                <div class="footer-footer-span" style="margin-left:3px;margin-right:3px;text-align:center;">
+                    <span>京东旗下网站：京东支付</span>|
+                    <span>京东云</span>
+                </div>
+                <div class="footer-header-list-last">
+                    <div style="display: flex;justify-content: center;align-items: center;margin-right:5px">
+                        <span class="sprite footer-header-sprite-last-r1c1"></span>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-right:5px">
+                        <span class="sprite footer-header-sprite-last-r1c2"></span>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-right:5px">
+                        <span class="sprite footer-header-sprite-last-r2c1"></span>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-right:5px">
+                        <span class="sprite footer-header-sprite-last-r2c2"></span>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-right:5px">
+                        <span class="sprite footer-header-sprite-last-r3c1"></span>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-right:5px">
+                        <span class="sprite footer-header-sprite-last-r3c2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--左侧监听  -->
+    <div class="lift">
+        <ul>
+            <li class="lift_item" id="lift1"><a href="javascript:;"><span>享品质</span></a></li>
+            <li class="lift_item" id="lift2"><a href="javascript:;"><span>服饰美妆</span></a></li>
+            <li class="lift_item" id="lift3"><a href="javascript:;"><span>家电手机</span></a></li>
+            <li class="lift_item" id="lift4"><a href="javascript:;"><span>电脑数码</span></a></li>
+            <li class="lift_item" id="lift5"><a href="javascript:;"><span>3C运动</span></a></li>
+            <li class="lift_item" id="lift6"><a href="javascript:;"><span>爱吃</span></a></li>
+            <li class="lift_item" id="lift7"><a href="javascript:;"><span>母婴家居</span></a></li>
+            <li class="lift_item" id="lift8"><a href="javascript:;"><span>图书汽车</span></a></li>
+            <li class="lift_item" id="lift9"><a href="javascript:;"><span>游戏金融</span></a></li>
+            <li class="lift_item" id="lift10"><a href="javascript:;"><span>旅行健康</span></a></li>
+            <li class="lift_item" id="lift11"><a href="javascript:;"><span>还没逛够</span></a></li>
+            <li class="lift_item" id="lift12"><a href="javascript:;"><span>顶部<i></i></span></a></li>
+        </ul>
+    </div>
+    <script src="./script/js/swiper.min.js"></script>
+    <script src="./script/catedata.js"></script>
+    <script src="./script/index.js"></script>
+
+    <script id="all" type="text/html">
+        {{each $data itemArr index}}
+        <div class="allDataChild">
+            <div>
+                <div class="allDataHeader">
+                    <h4 class="col-sm-9">{{itemArr.title}}</h4>
+                    {{each itemArr.tags itemhead index}}
+                    <div class="col-sm-3 allDataHeaderWord cancellr">
+                        <a href="{{itemhead.link}}">{{itemhead.text}}</a>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="allDataBody">
+                    {{each itemArr.body itemCover index}}
+                    <div class="col-sm-12 cancellr  allDataBodyTop">
+                        <div class="col-sm-4 cancellr">
+                            <a href="{{itemCover.cover.link}}"><img src="{{itemCover.cover.img}}" alt=""></a>
+                        </div>
+                        <div class="col-sm-8 cancellr">
+                            {{each itemCover.pbi itemPbi index}}
+                            <div class="allDataBodyPbi col-sm-6" style="margin-top:15px;">
+                                <div class="col-sm-5 cancellr">
+                                    <h4>{{itemPbi.title}}</h4>
+                                    <span>{{itemPbi.promo}}</span>
+                                </div>
+                                <div class="col-sm-5 cancellr">
+                                    <a href="{{itemPbi.link}}"><img src="{{itemPbi.img}}" alt=""></a>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="itemMore">
+                        {{each itemCover.more itemMore index}}
+                        <a href="{{itemMore.link}}"><img src="{{itemMore.img}}" alt=""></a> {{/each}}
+                    </div>
+                    {{/each}}
+                    <div class="allDataFooter">
+                        {{each itemArr.foot itemfoot index}}
+                        <a href="{{itemfoot.link}}"><img src="{{itemfoot.img}}" alt=""></a> {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script>
+        $('.me .box_bd .content li').first().addClass('show').siblings().addClass('opacity')
+        var meIndex = 0;
+        var meTimer = setInterval(changeMeIndex, 3000)
+        function changeMeIndex() {
+            meIndex = meIndex >= $('.me .box_bd .content li').length - 1 ? 0 : meIndex + 1
+            changeMeImage()
+        }
+        function changeMeImage() {
+            $('.me .box_bd .content li').eq(meIndex).removeClass('opacity').fadeIn('fast').siblings().addClass('opacity')
+            $('.me .box_bd .circle li').eq(meIndex).addClass('current').siblings().removeClass('current')
+        }
+        $('.me .box_bd .content li').hover(function () {
+            $('.me .box_bd .but').removeClass('opacity')
         })
-        // 秒杀左侧轮播图
+        $('.me .box_bd .btn_left').click(function () {
+            meIndex = meIndex < 0 ? $('.me .box_bd .content li').length - 1 : index - 1
+            changeMeImage()
+        })
+        $('.me .box_bd .btn_right').click(function () {
+            changeMeIndex()
+        })
+        $('.me .box_bd .circle li').hover(function () {
+            clearInterval(meTimer)
+            meIndex = $(this).index()
+            changeMeImage()
+        }, function () {
+            meTimer = setInterval(changeMeIndex, 3000)
+        })
+        $('.me .box_bd .but').hover(function () {
+            clearInterval(meTimer)
+        }, function () {
+            meTimer = setInterval(changeMeIndex, 3000)
+        })
 
-
-        // var swiper1 = new Swiper('.seckilling .JDMS_carousel_1 ul', {
-        //     prevButton: ''
-        // })
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            slidesPerView: 1,
-            paginationClickable: true,
-            spaceBetween: 30,
-            loop: true
-        });
+        // 爱生活
+        $.get('/love/life', function (data) {
+            if (data.code == 'success') {
+                var data = data.result
+                var strHtml = template('all', data)
+                $('#allData').html(strHtml)
+            }
+        })
     </script>
 </body>
 

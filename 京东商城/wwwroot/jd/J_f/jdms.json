@@ -5,7 +5,8 @@
     "subTitLink": "https://miaosha.jd.com"
   },
   "boxBd": {
-    "item": [{
+    "item": [
+      [{
         "img": "http://img13.360buyimg.com/n4/s130x130_jfs/t6085/123/167619453/130982/8641cd19/592657b0Nf1a9912b.jpg",
         "link": "https://miaosha.jd.com/#4161503",
         "text": "联想(Lenovo)小新潮5000 15.6英寸笔记本电脑(i7-7500U 4G 1T+128G 2G独显 FHD Office2016)银",
@@ -39,8 +40,8 @@
         "text": "爱普生（EPSON）L360墨仓式打印机 家用彩色喷墨一体机（打印 复印 扫描）",
         "priceNew": "949.00",
         "priceOrgin": ""
-      },
-      {
+      }],
+      [{
         "img": "http://misc.360buyimg.com/mtd/pc/common/img/blank.png",
         "link": "https://miaosha.jd.com/#4489993",
         "text": "今锦上 阳澄湖六月黄大闸蟹全母蟹现货实物生鲜礼盒 8只装螃蟹 2.1-2.4两/只 海鲜水产",
@@ -74,8 +75,8 @@
         "text": "【京东超市】吉列剃须刀锋隐致顺手动刮胡刀套装（1刀架1刀头+4刀头）京东特供装",
         "priceNew": "149.00",
         "priceOrgin": ""
-      },
-      {
+      }],
+      [{
         "img": "http://misc.360buyimg.com/mtd/pc/common/img/blank.png",
         "link": "https://miaosha.jd.com/#1024355068",
         "text": "澄宴 阳澄湖大闸蟹礼券大闸蟹券1186型8只装 公4.0两 母2.8两",
@@ -109,8 +110,8 @@
         "text": "【京东超市】帮宝适（Pampers）超薄干爽 婴儿纸尿裤 新生儿NB96片【0-5kg】尿不湿",
         "priceNew": "79.90",
         "priceOrgin": ""
-      },
-      {
+      }],
+      [{
         "img": "http://misc.360buyimg.com/mtd/pc/common/img/blank.png",
         "link": "https://miaosha.jd.com/#1447319",
         "text": "九阳（Joyoung）电水壶全钢内胆电热水壶双层防烫K15-F626",
@@ -137,7 +138,7 @@
         "text": "微星（MSI）GL62M 7RDX-1456CN 15.6英寸游戏笔记本电脑(i5-7300HQ 8G 1T GTX1050 4G 背光)黑",
         "priceNew": "5198.00",
         "priceOrgin": ""
-      }
+      }]
     ],
     "spItem": [{
         "img": "//img10.360buyimg.com/mobilecms/s180x225_jfs/t8455/89/1847277739/109339/4e8d0460/59bfdeb5Ne674aa8a.jpg",
